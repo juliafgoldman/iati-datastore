@@ -5,6 +5,7 @@ SQLALCHEMY_DATABASE_URI = os.environ.get(
     'IATI_DATASTORE_DATABASE_URL', 'postgres:///iati-datastore')
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 JSON_SORT_KEYS = False
+SQLALCHEMY_RECORD_QUERIES = True
 
 
 # Due to a nasty OSX bug, we have to prevent checking system for proxies...

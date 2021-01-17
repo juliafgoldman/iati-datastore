@@ -3,8 +3,9 @@ from datetime import datetime
 import sqlalchemy as sa
 from flask import (current_app, request, Response, Blueprint,
                    jsonify, abort, render_template, make_response,
-                   url_for)
+                   url_for, stream_with_context)
 from flask.views import MethodView
+from flask_sqlalchemy import get_debug_queries
 from werkzeug.datastructures import MultiDict
 
 from iatilib import db
@@ -16,6 +17,14 @@ from . import dsfilter, validators, serialize
 
 api = Blueprint('api1', __name__)
 Scrollination = namedtuple('Scrollination', 'query offset limit total items')
+
+
+@api.teardown_request
+def teardown_request(response):
+    for query in get_debug_queries():
+        if query.duration >= 0:
+            print(query.statement, query.parameters, query.duration, query.context)
+    return response
 
 
 @api.route('/')
@@ -305,7 +314,7 @@ class DataStoreView(MethodView):
 
         if self.streaming:
             query = query.yield_per(100)
-            body = serializer(Stream(query))
+            body = stream_with_context(serializer(Stream(query)))
         else:
             pagination = self.paginate(
                 query,
