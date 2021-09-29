@@ -288,11 +288,13 @@ def activities(args):
 
 def activities_for_csv(args):
     # For performance reasons, eager lead some extra data we will use later for CSV's.
+    # Don't load some columns we don't need
     return _filter(
         db.session.query(Activity).options(
             orm.selectinload(Activity.recipient_country_percentages),
             orm.selectinload(Activity.recipient_region_percentages),
             orm.selectinload(Activity.sector_percentages),
+            orm.defer(Activity.raw_xml)
         ),
         args
     )
