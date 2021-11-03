@@ -2,40 +2,40 @@ export default {
   codeForIATIProject: 'Um projeto de Code for IATI',
   datastoreDowntimeNotice: `Você está usando o Datastore Classic durante o <a href="https://iatistandard.org/en/news/technical-notice-2-iatis-datastore-to-be-integrated-in-new-unified-single-platform/">
     tempo de inatividade do IATI Datastore oficial</a>? 
-    Gostariamos de ouvir de você, para entender melhor os nossos usuários e as suas necessidades.<br />Por favor entre em contacto com nós através <a href="mailto:hello@codeforiati.org">hello@codeforiati.org</a>`,
+    Gostariamos de ouvir de você, para entender melhor os nossos usuários e as suas necessidades.<br />Por favor, entre em contato com nós através de <a href="mailto:hello@codeforiati.org">hello@codeforiati.org</a>`,
   datastoreClassic: {
     heading: 'IATI Datastore Classico',
-    strapline: 'A versão classica do IATI Datastore, reinventada.',
+    strapline: 'A versão clássica do IATI Datastore, reinventada.',
   },
-  accessText: 'Acessar <code>{activities}</code> atividades e <code>{transactions}</code> transações.',
+  accessText: 'Acesse <code>{activities}</code> atividades e <code>{transactions}</code> transações.',
   viewDocumentation: 'Ver documentação',
   viewAPI: 'Ver API',
   health: {
     checkingDatastoreStatus: "Verificando o status do Datastore",
     datastoreOperational: 'Datastore totalmente operacional',
     datastoreProblems: 'Datastore tem alguns problemas',
-    lastUpdated: 'Ultima actualização:',
+    lastUpdated: 'Última atualização:',
     unknown: 'desconhecido',
-    queueData: `{itemsOnQueue} conjuntos de dados estão aguardando a atualização, dum total de {NumDatasets} conjuntos. Avançe e usa os dados, ou espere um pouco até que as atualizações de hoje se tornam disponíveis.`,
+    queueData: `{itemsOnQueue} conjuntos de dados estão aguardando a atualização, dum total de {NumDatasets} conjuntos. Avance e use os dados, ou espere um pouco até que as atualizações de hoje se tornem disponíveis.`,
     updatePctComplete: `Atualização diária {parsingComplete}% concluída`,
     timing: {
       hoursAgo: 'à uma hora | {hours} horas atrás',
       minutesAgo: 'à um minuto | {minutes} minutos atrás',
-      secondsAgo: 'à um segundo | {seconds} secondos atrás'
+      secondsAgo: 'à um segundo | {seconds} segundos atrás'
     }
   },
   getTheData: {
     heading: 'Obtenha os dados',
-    para1: 'Pode obter dados do IATI datastore classico em vários formatos.',
-    para2: "Pode filtrar com base da organização que publica a informação, do lugar onde a atividade está acontecendo e do setor da atividade. Você pode escolher extrair atividades, transações ou orçamentos individuais.",
+    para1: 'Você pode obter dados do IATI datastore clássico em vários formatos.',
+    para2: "Você pode filtrar com base na organização que publica a informação, do lugar onde a atividade está acontecendo e do setor da atividade. Você pode escolher extrair atividades, transações ou orçamentos individuais.",
     chooseFilters: {
       heading: 'Escolha seus filtros',
-      text: 'Essas opções permitem filtrar dados em IATI, dependendo do que você está procurando. Filtros adicionais <a href="{baseURL}/docs/api/#filtering"> estão disponíveis </a> consultando o Datastore diretamente.'
+      text: 'Estas opções permitem filtrar dados da IATI, dependendo do que você está procurando. Filtros adicionais <a href="{baseURL}/docs/api/#filtering"> estão disponíveis </a> consultando o Datastore diretamente.'
     }
   },
   howToView: {
     heading: 'Como gostaria de ver essa informação?',
-    text: 'Essas opções lhe permitem configurar a forma como seus dados serão desagregados, para tornar possível diferentes tipos de análise.'
+    text: 'Estas opções lhe permitem configurar a forma como seus dados serão desagregados, para tornar possível diferentes tipos de análise.'
   },
   downloadData: {
     buttons: {
@@ -47,8 +47,8 @@ export default {
     copied: 'Copiado!'
   },
   footer: {
-    sourceCode: '<a href="https://github.com/codeforIATI/iati-datastore">IATI Datastore Classico no GitHub</a>, software gratuito licenciado sob a GNU Affero General Public License v3.',
-    credits: 'IATI Datastore Classico é um projeto de <a href="https://codeforiati.org"> Code for IATI </a>',
+    sourceCode: '<a href="https://github.com/codeforIATI/iati-datastore">IATI Datastore Clássico no GitHub</a>, software gratuito licenciado sob a GNU Affero General Public License v3.',
+    credits: 'IATI Datastore Clássico é um projeto de <a href="https://codeforiati.org"> Code for IATI </a>',
     privacyPolicy: 'Política de Privacidade'
   },
   outputFormat: {
@@ -59,23 +59,23 @@ export default {
         {
           'value': '1',
           'text': '1a linha',
-          'description': "Visualiza sua selecão, mostrando apanas a primeira linha."
+          'description': "Visualiza sua seleção, mostrando apanas a primeira linha."
         },
         {
           'value': '50',
           'text': '50 linhas',
-          'description': "Visualiza sua selecão, mostrando as primeiras 50 linhas."
+          'description': "Visualiza sua seleção, mostrando as primeiras 50 linhas."
         },
         {
           'value': 'stream/fluxo',
           'text': 'Seleção inteira',
-          'description': "Obtem todos os resultado que correspondem aos seus critérios de busca/pesquisa."
+          'description': "Obtém todos os resultado que correspondem aos seus critérios de busca/pesquisa."
         }
       ]
     },
     csvOptions: {
       label: 'Opções CSV',
-      csvOnlyNote: 'Opções somente disponíveis para extrato em CSV.',
+      csvOnlyNote: 'Opções disponíveis somente para extrato em CSV.',
       chooseBreakdown: {
         label: 'Escolha os detalhes/breakdown',
         options: [
@@ -92,12 +92,12 @@ export default {
           {
             'value': 'budget',
             'text': 'Um orçamento por linha',
-            'description': "Cada linha contem o valor dum periodo do orçamento. Os dados de transação não estão incluídos. O identificador de atividade parente e outros campos de nível de atividade são repetidos para cada linha de orçamento."
+            'description': "Cada linha contém o valor de um período do orçamento. Os dados de transação não estão incluídos. O identificador de atividade parente e outros campos de nível de atividade são repetidos para cada linha de orçamento."
           }
         ],
       },
       repeatRows: {
-        label: 'Repete limhas',
+        label: 'Repetir linhas',
         options: [
           {
             'value': '',
@@ -107,12 +107,12 @@ export default {
           {
             'value': '/by_sector',
             'text': 'Expansão Multi-setor',
-            'description': "Cada linha de atividade, transação ou orçamento é repetida separadamente por cada setor relatado. A percentagem correspondente para a divisão do setor é relatada em uma coluna separada. Isso permite que você adicione facilmente aritmética à sua planilha para calcular os valores proporcionalmente."
+            'description': "Cada linha de atividade, transação ou orçamento é repetida separadamente por cada setor relatado. A porcentagem correspondente para a divisão do setor é relatada em uma coluna separada. Isso permite que você adicione facilmente aritmética à sua planilha para calcular os valores proporcionalmente."
           },
           {
             'value': '/by_country',
             'text': 'Expansão multi-país',
-            'description': "Cada linha de atividade, transação ou orçamento é repetida separadamente por cada país relatado. A percentagem correspondente para a divisão do setor é relatada numa coluna separada. Isso permite que você adicione facilmente aritmética à sua planilha para calcular os valores proporcionalmente."
+            'description': "Cada linha de atividade, transação ou orçamento é repetida separadamente por cada país relatado. A porcentagem correspondente para a divisão do setor é relatada numa coluna separada. Isso permite que você adicione facilmente aritmética à sua planilha para calcular os valores proporcionalmente."
           }
         ]
       }
@@ -121,39 +121,39 @@ export default {
   fields: {
     specificActivities: {
       label: 'Atividades específicas',
-      description: 'Busca uma atividade específica usando seu identifidor IATI, título ou sua descrição.'
+      description: 'Pesquisar uma atividade específica usando seu identificador IATI, título ou sua descrição.'
     },
     iatiIdentifier: {
       label: 'Identificador IATI',
-      description: 'Busca uma atividade que contem um identificador IATI específico (similar a um código do projecto).',
+      description: 'Pesquisar uma atividade que contém um identificador IATI específico (similar a um código do projeto).',
       placeholder: 'Todos os identificadores IATI'
     },
     title: {
       label: 'Título',
-      description: 'Busca duma atividade com título que contêm o texto específicado.',
+      description: 'Pesquisar uma atividade com título que contém o texto específicado.',
       placeholder: 'Todos títulos'
     },
     description: {
       label: 'Descrição',
-      description: 'Busca duma atividade com descrição que contêm texto especificado.',
+      description: 'Pesquisar uma atividade com descrição que contém texto especificado.',
       placeholder: 'Todas descrições'
     },
     activityStatus: {
       label: 'Status da atividade',
-      description: 'Busca de atividades com o status especificado.',
+      description: 'Pesquisar atividades com o status especificado.',
       placeholder: 'Todos tipos de status de atividade'
     },
     reportingOrganisation: {
       label: 'Organição Relatora',
-      description: 'A organização relatora é a que publica/editora dos dados IATI.',
+      description: 'A organização relatora é a que publica os dados IATI.',
       type: {
         label: 'Tipo da organização relatora',
-        description: 'Seleciona somente um tipo de organiçao relatora.',
-        placeholder: 'Todos os típos de editoras (por exemplo Governos).'
+        description: 'Selecionar somente um tipo de organização relatora.',
+        placeholder: 'Todos os tipos de relatores (por exemplo, Governos).'
       },
       ref: {
         label: 'Organização Relatora',
-        description: 'Seleciona apenas os dados duma editora (por exemplo O Banco Mundial).',
+        description: 'Selecionar apenas os dados de um relator (por exemplo, O Banco Mundial).',
         placeholder: 'Todas as organizações relatoras'
       }
     },
@@ -165,7 +165,7 @@ export default {
     },
     policyMarker: {
       label: 'Marcador de política',
-      description: 'A política ou tema abordade pela atividade, de acordo com is marcadores de política OECD DAC CRS.',
+      description: 'A política ou tema abordado pela atividade, de acordo com os marcadores de política OECD DAC CRS.',
       code: {
         label: 'Marcador de política',
         description: '',
@@ -184,10 +184,10 @@ export default {
         placeholder: 'Todos países destinatários'
       },
       region: {
-        label: 'Região destinatário',
-        placeholder: 'Todas regiões destinários'
+        label: 'Região destinatária',
+        placeholder: 'Todas regiões destinárias'
       },
-      note: 'Escolher ambos, região e país, provavelmente não retornará dados, já que a maioria dos editors publicam ou região ou país.'
+      note: 'Escolher ambos, região e país, provavelmente não retornará dados, já que a maioria dos relatores publicam ou região ou país.'
     },
     dates: {
       label: 'Datas',
@@ -202,13 +202,13 @@ export default {
         labelCurrentMonth: 'Mês atual',
         labelNextMonth: 'Próximo mês',
         labelNextYear: 'Próximo ano',
-        labelNextDecade: 'Proxima década',
+        labelNextDecade: 'Próxima década',
         labelToday: 'Hoje',
         labelSelected: 'Data selecionada',
         labelNoDateSelected: 'Nenhuma data selecionada',
         labelCalendar: 'Calendário',
         labelNav: 'Navegação no calendário',
-        labelHelp: 'Usa teclas do cursor para navegar as datas do calendário'
+        labelHelp: 'Use as teclas do cursor para navegar pelas datas do calendário'
       },
     }
   }
